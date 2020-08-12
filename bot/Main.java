@@ -21,7 +21,7 @@ public class Main {
 
     private Main() throws IOException, IrcException, InterruptedException {
         try {
-            JDA j = JDABuilder.createDefault("NzE0NTg1NTk5ODM4OTEyNjQy.Xswz9A.fijQ4LvfY76xAdiFYAkDrhzKgtA").setChunkingFilter(ChunkingFilter.ALL)
+            JDA j = JDABuilder.createDefault("TOKEN").setChunkingFilter(ChunkingFilter.ALL)
                     .setMemberCachePolicy(MemberCachePolicy.ALL).enableIntents(GatewayIntent.GUILD_MEMBERS)
                     .setActivity(Activity.streaming("DM me to contact the staff | mm!help", "https://www.twitch.tv/kristoferyee"))
                     .addEventListeners(new ModMail())
