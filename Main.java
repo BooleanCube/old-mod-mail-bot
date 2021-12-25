@@ -23,7 +23,7 @@ public class Main {
         try {
             JDA j = JDABuilder.createDefault("TOKEN").setChunkingFilter(ChunkingFilter.ALL)
                     .setMemberCachePolicy(MemberCachePolicy.ALL).enableIntents(GatewayIntent.GUILD_MEMBERS)
-                    .setActivity(Activity.streaming("DM me to contact the staff | mm!help", "https://www.twitch.tv/kristoferyee"))
+                    .setActivity(Activity.plying("DM me to contact the staff | mm!help"))
                     .addEventListeners(new ModMail())
                     .addEventListeners(new ModMailBan())
                     .addEventListeners(new MMHelp())
